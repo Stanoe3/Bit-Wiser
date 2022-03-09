@@ -5,7 +5,8 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <h2>MERN-Test</h2>
+        <h1>BitWiser</h1>
+        <h2>A little BitWiser everyday</h2>
       </div>
     )
   }
