@@ -4,8 +4,7 @@ import Navbar from "./Navbar"
 const Header = ({ title }) => {
   return (
     <div>
-        <Navbar />
-        <h1>{title}</h1>
+        <Navbar items={[title, "Home Page", "Profile", "My Exercises"]}/>
     </div>
     
   )

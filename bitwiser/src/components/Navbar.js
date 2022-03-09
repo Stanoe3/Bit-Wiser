@@ -1,17 +1,16 @@
 import React from 'react'
 
-const Navbar = () => {
-  return (
-    <div>
+const Navbar = ({ items }) => {
+    const list = items.map(item => <li key={item}>{item}</li>)
+    return (
         <nav>
-            <ul className="navbar">
-                <li>Test</li>
-                <li>Test2</li>
-                <li>Test3</li>
-            </ul>
+            <div className="navbar">
+                <ul className="nav">
+                    {list}
+                </ul>
+            </div>
         </nav>
-    </div>
-  )
+    )
 }
 
 export default Navbar
