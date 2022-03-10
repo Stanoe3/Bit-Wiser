@@ -25,12 +25,14 @@ code {
   z-index: 0;
   float: left;
   box-shadow: 0 0.2rem 0.2rem;
+  align-items: center;
 }
 
 .navbar nav{
   list-style-type: none;
   margin: 0;
   display: inline;
+  margin: auto;
 }
 
 .nav-item {
@@ -39,7 +41,8 @@ code {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  padding: 0.8rem 0.4rem;
+  margin: 0.2rem 0.3rem;
+  padding: 0.8rem 0.8rem;
   border-radius: 0.4rem;
 }
 
