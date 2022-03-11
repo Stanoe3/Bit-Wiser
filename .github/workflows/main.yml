@@ -3,6 +3,7 @@ on:
   pull_request:
     branches:
       - main
+      - develop
 jobs:
   test:
     name: Check the source code
@@ -10,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install packages
-        run: npm ci
+        run: npm install react react-dom bootstrap eslint-plugin-functional eslint husky lint-staged prettier react-bootstrap
       - name: Prettier
-        run: npm run format
+        run: prettier --write ./src
       - name: Lint
-        run: npm run lint
+        run: eslint ./src
